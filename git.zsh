@@ -13,6 +13,8 @@ alias gcm='nocorrect git commit -m'
 alias gcam='nocorrect git commit -a -m'
 alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
+alias gch='git checkout'
+alias gd='git diff'
 
 #
 # Git-Flow aliases
