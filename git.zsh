@@ -15,6 +15,7 @@ alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
 alias gch='git checkout'
 alias gd='git diff'
+alias glg='git log'
 
 #
 # Git-Flow aliases
