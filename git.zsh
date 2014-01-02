@@ -8,14 +8,25 @@ alias gs='nocorrect git status'
 alias ga='nocorrect git add'
 alias gaa='nocorrect git add --all'
 alias gc='nocorrect git commit'
-alias gca='nocorrect git commit -a'
 alias gcm='nocorrect git commit -m'
-alias gcam='nocorrect git commit -a -m'
 alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
 alias gch='git checkout'
 alias gd='git diff'
 alias glg='git log'
+
+# Stay safe when git commit -a
+safe_command() {
+	message=$1
+	shift 1
+	echo $message; echo "Are you sure? (y/n)"; read ANSWER; if [ $ANSWER = y ]; then $*; fi;
+}
+message='You are about to perform a git commit all.'
+# no correct doesn't work here... why?
+gca_cmd='git commit -a'
+gcam_cmd='git commit -a -m'
+alias gca="safe_command '$message' $gca_cmd"
+alias gcam="safe_command '$message' $gcam_cmd"
 
 #
 # Git-Flow aliases
