@@ -19,9 +19,9 @@ alias glg='git log'
 safe_command() {
 	message=$1
 	shift 1
-	echo $message; echo "Are you sure? (y/n)"; read ANSWER; if [ $ANSWER = y ]; then $*; fi;
+	echo $message; echo "\e[0;33;49mAre you sure? (y/n)\e[0m"; read ANSWER; if [ $ANSWER = y ]; then $*; fi;
 }
-message='You are about to perform a git commit all.'
+message='\e[0;33;49mYou are about to perform a git commit all.\e[0m'
 # no correct doesn't work here... why?
 gca_cmd='git commit -a'
 gcam_cmd='git commit -a -m'
