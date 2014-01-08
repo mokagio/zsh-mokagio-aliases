@@ -13,7 +13,12 @@ alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
 alias gch='git checkout'
 alias gd='git diff'
-alias glg='git log'
+
+# See https://coderwall.com/p/euwpig
+alias glg="git log \
+  --graph \
+  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue) %an%Creset' \
+  --abbrev-commit"
 
 # Stay safe when git commit -a
 safe_command() {
