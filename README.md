@@ -9,4 +9,10 @@ _Note_ The zsh setup these aliases are working on is zsh + [prezto](https://gith
 
 ###Usage
 
-Just `source` the files you want to use in your `.zshrc`
+Just `source` `zsh_moka_aliases.zsh` in your `.zshrc` to get the whole bundle, or the single files if you need only some of them.
+
+###A note
+
+I'd be really happy if you used my aliases, and maybe tell me what you think, but it would be better if you'd use these as a template for your own custom aliases. Aliases should be personal, and the process of setting them up is very important to memorize them.
+
+Like this repo? Tweet me: [@mokagio](https://twitter.com/mokagio).
