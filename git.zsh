@@ -13,6 +13,7 @@ alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
 alias gch='git checkout'
 alias gd='git diff'
+alias gm='git merge'
 
 # See https://coderwall.com/p/euwpig
 alias glg="git log \
