@@ -25,7 +25,7 @@ alias glg="git log \
 safe_command() {
 	message=$1
 	shift 1
-	echo "\n$message"; echo "\e[0;33;49mAre you sure? (y/n)\e[0m"; read ANSWER; if [ $ANSWER = y ]; then $*; fi;
+	echo "$message"; echo -n "\e[0;33;49mAre you sure? (y/n) \e[0m"; read ANSWER; if [ $ANSWER = y ]; then $*; fi;
 }
 message='\e[0;33;49mYou are about to perform a git commit all.\e[0m'
 # no correct doesn't work here... why?
