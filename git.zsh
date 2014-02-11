@@ -14,6 +14,7 @@ alias gl='nocorrect git pull'
 alias gch='git checkout'
 alias gd='git diff'
 alias gm='git merge'
+alias gf='git fetch'
 
 # See https://coderwall.com/p/euwpig
 alias glg="git log \
@@ -39,7 +40,7 @@ alias gcam="safe_command '$message' $gcam_cmd"
 # https://github.com/nvie/gitflow
 #
 
-alias gf='nocorrect git flow'
+alias gfl='nocorrect git flow'
 alias gff='nocorrect git flow feature'
 alias gffs='nocorrect git flow feature start'
 alias g3f='nocorrect git flow feature finish'
