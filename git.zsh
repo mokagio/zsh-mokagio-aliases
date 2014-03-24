@@ -35,6 +35,8 @@ gcam_cmd='git commit -a -m'
 alias gca="safe_command '$message' $gca_cmd"
 alias gcam="safe_command '$message' $gcam_cmd"
 
+alias gri="git rebase --interactive"
+
 #
 # Git-Flow aliases
 # https://github.com/nvie/gitflow
