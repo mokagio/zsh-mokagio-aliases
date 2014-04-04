@@ -36,6 +36,8 @@ alias gca="safe_command '$message' $gca_cmd"
 alias gcam="safe_command '$message' $gcam_cmd"
 
 alias gri="git rebase --interactive"
+alias gpt="git push; git push --tags"
+alias gap="git add -p"
 
 #
 # Git-Flow aliases
