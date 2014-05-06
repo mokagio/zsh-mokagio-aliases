@@ -15,6 +15,7 @@ alias gch='git checkout'
 alias gd='git diff'
 alias gm='git merge'
 alias gf='git fetch'
+alias gt='git tag'
 
 # See https://coderwall.com/p/euwpig
 alias glg="git log \
@@ -38,6 +39,7 @@ alias gcam="safe_command '$message' $gcam_cmd"
 alias gri="git rebase --interactive"
 alias gpt="git push; git push --tags"
 alias gap="git add -p"
+alias gchp="git checkout -p"
 
 #
 # Git-Flow aliases
