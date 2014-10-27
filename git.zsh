@@ -12,17 +12,22 @@ alias gcm='nocorrect git commit -m'
 alias gp='nocorrect git push'
 alias gl='nocorrect git pull'
 alias gch='git checkout'
+alias gnb='git checkout -b'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gm='git merge'
 alias gf='git fetch'
 alias gt='git tag'
+# merge by always making a new commit (--no-ff) and open editor for the commit message (-e)
+alias gmm='git merge --no-ff -e' 
 
 # See https://coderwall.com/p/euwpig
 alias glg="git log \
   --graph \
   --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue) %an%Creset' \
   --abbrev-commit"
+# see above + only show commits made in the the current branch
+alias glgf='glg --first-parent'
 
 # Stay safe when git commit -a
 safe_command() {
